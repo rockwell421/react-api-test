@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Forgot Your Password?</h1>
-        <p>Please enter the email address registered to your account</p>
+        <p className="gray-text">Please enter the email address registered to your account</p>
         <Form />
       </div>
     );

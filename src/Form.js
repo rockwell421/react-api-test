@@ -12,6 +12,7 @@ class Form extends Component {
 
 //API
   getUserInfo = (e) => {
+    this.setState({loading: true})
     e.preventDefault();
     const userInfo = {
       loginId: this.refs.userInput.value
@@ -25,7 +26,6 @@ class Form extends Component {
       });
   }
 
-    // {this.state.loading ? <Spinner /> : <p>{this.state.msg}</p> }
   onSubmit = (e) => {
     this.setState({loading: false})
   }
@@ -33,34 +33,24 @@ class Form extends Component {
   _answerRender = () => {
        return(
            <div>
-               <p>{this.state.msg}</p>
+               <p className="gray-text">{this.state.msg}</p>
            </div>
        )
    }
 
   render() {
-
-    // let loader =
-    // if(this.state.loading) {
-    //   return (
-    //     <p>this.state.message</p>
-    //   )
-    // } else {
-    //   return (
-    //     <Spinner />
-    //   )
-    // }
-
     return (
       <div>
-        <p>Email Address: </p>
-        <form onSubmit={this.onSubmit.bind(this)} className="Form">
-          <input type="text" ref="userInput" />
+        <div className="field">
+          <p style={{marginTop: '2rem'}}>Email Address: </p>
+          <form onSubmit={this.onSubmit.bind(this)} className="Form">
+            <input type="text" ref="userInput" />
+          </form>
+        </div>
           <Button clicked={this.getUserInfo.bind(this)} />
           <div>
-            {!this.state.loading ? this._answerRender() : <Spinner />}
+            {this.state.loading ? <Spinner /> : this._answerRender() }
           </div>
-        </form>
       </div>
     );
   }

@@ -25,10 +25,12 @@ html,body {
 
 .Button {
   color: white;
-  background: pink;
+  background: #fa7aa6;
   padding: 0.5rem;
   border-radius: 5px;
-  margin-top: 0.5rem;
+  margin-left: 6.8rem;
+  font-size: 14px;
+  width: 45%;
 }
 
 .Form {
@@ -37,5 +39,19 @@ html,body {
 }
 
 input {
+  border-radius: 5px;
+  width: 90%;
+  height: 80%;
   padding: 0.5rem;
+}
+
+.gray-text {
+  color: darkgray;
+}
+
+.field {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
