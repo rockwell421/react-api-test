@@ -1,0 +1,19 @@
+
+.container2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 360px;
+  min-width: 360px;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 360px;
+}
+
+img {
+  padding: 0.25rem;
+}
