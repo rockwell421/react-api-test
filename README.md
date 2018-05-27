@@ -1,6 +1,6 @@
-This is repo is for a mock-up technical test.
+This is repo is for a mock-up technical test, along with other additional API calls.
 
-Instructions
+Part One:
 
 Use the Javascript library of your choice to do the following:
 
@@ -9,3 +9,7 @@ Use the Javascript library of your choice to do the following:
 2) While it's loading, load a spinner/loader
 
 3) Return the AJAX response/message (JSON object) into a paragraph below.
+
+Part Two:
+
+Make an API call to the https://randomuser.me/ and generate medium thumbnail images
